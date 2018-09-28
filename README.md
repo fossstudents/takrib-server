@@ -13,8 +13,7 @@ Clone the repo and make it yours:
 
 ```bash
 git clone --depth 1 https://github.com/FossPakistan/takrib-server
-cd express-rest-es2017-boilerplate
-rm -rf .git
+cd takrib-server
 ```
 
 Install dependencies:
