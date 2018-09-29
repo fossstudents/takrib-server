@@ -40,9 +40,9 @@ describe('Users API', async () => {
   beforeEach(async () => {
     dbUsers = {
       branStark: {
-        email: 'branstark@gmail.com',
+        email: 'hassan@gmail.com',
         password: passwordHashed,
-        name: 'Bran Stark',
+        name: 'Hassan',
         role: 'admin',
       },
       jonSnow: {
@@ -53,15 +53,15 @@ describe('Users API', async () => {
     };
 
     user = {
-      email: 'sousa.dfs@gmail.com',
+      email: 'ali@gmail.com',
       password,
-      name: 'Daniel Sousa',
+      name: 'Ali Ahmed',
     };
 
     admin = {
-      email: 'sousa.dfs@gmail.com',
+      email: 'ali@gmail.com',
       password,
-      name: 'Daniel Sousa',
+      name: 'Ali Ahmed',
       role: 'admin',
     };
 

@@ -27,16 +27,16 @@ describe('Authentication API', () => {
 
   beforeEach(async () => {
     dbUser = {
-      email: 'branstark@gmail.com',
-      password: 'mypassword',
-      name: 'Bran Stark',
+      email: 'admin@takrib.com',
+      password: 'adminpass',
+      name: 'Administrator',
       role: 'admin',
     };
 
     user = {
-      email: 'sousa.dfs@gmail.com',
-      password: '123456',
-      name: 'Daniel Sousa',
+      email: 'branstark@gmail.com',
+      password: '132465',
+      name: 'Bran Stark',
     };
 
     refreshToken = {
