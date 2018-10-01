@@ -33,7 +33,7 @@ exports.create = async (req, res, next) => {
     res.status(httpStatus.CREATED);
     res.json(savedEvent.transform());
   } catch (error) {
-    return next(error);
+    next(error);
   }
 };
 
@@ -46,12 +46,13 @@ exports.replace = async (req, res, next) => {
     const { event } = req.locals;
     const newEvent = new Event(req.body);
     const newEventObject = newEvent.toObject();
+
     await event.update(newEventObject, { override: true, upsert: true });
     const savedEvent = await Event.findById(event._id);
 
     res.json(savedEvent.transform());
   } catch (error) {
-    return next(error);
+    next(error);
   }
 };
 

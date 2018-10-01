@@ -74,6 +74,8 @@ eventSchema.pre('save', async (next) => {
   try {
     // todo
     console.log('pre-save hook event');
+
+    return next();
   } catch (error) {
     return next(error);
   }
